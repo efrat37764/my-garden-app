@@ -6,8 +6,10 @@ function Flower(props) {
     padding: "30px",
     borderRadius: "20px",
     textAlign: "center",
-    width: "280px",
-    margin: "20px auto",
+    width: "300px",
+    display: "inline-block",
+    margin: "20px",
+    verticalAlign: "top",
     boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
     fontFamily: "Segoe UI, Tahoma, sans-serif",
     cursor: "pointer"
