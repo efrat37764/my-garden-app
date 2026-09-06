@@ -1,7 +1,6 @@
-function Flower() {
-  const flowerName = "שושנת העמקים";
+function Flower(props) {
   const petalsColor = "#FFC1E3";     
-  const centerLeafColor = "#f358c9";
+  const centerLeafColor = "#f358c9"; 
 
   const cardStyle = {
     backgroundColor: petalsColor,
@@ -12,7 +11,8 @@ function Flower() {
     width: "280px",
     margin: "20px auto",
     boxShadow: "0 8px 20px rgba(0,0,0,0.08)",
-    fontFamily: "Segoe UI, Tahoma, sans-serif"
+    fontFamily: "Segoe UI, Tahoma, sans-serif",
+    cursor: "pointer"
   };
 
   const flowerGraphicStyle = {
@@ -31,14 +31,19 @@ function Flower() {
   const centerStyle = {
     width: "30px",
     height: "30px",
-    backgroundColor: centerLeafColor, // מציג את הצבע מהמשתנה
+    backgroundColor: centerLeafColor,
     borderRadius: "50%",
     boxShadow: "0 2px 5px rgba(0,0,0,0.2)"
   };
 
+
+  const handleClick = () => {
+    alert(`אני פרח מסוג ${props.name}`);
+  };
+
   return (
-    <div style={cardStyle}>
-      <h2 style={{ margin: "0 0 8px 0", fontSize: "1.6rem" }}>{flowerName}</h2>
+    <div style={cardStyle} onClick={handleClick}>
+      <h2 style={{ margin: "0 0 8px 0", fontSize: "1.6rem" }}>{props.name}</h2>
       <div style={flowerGraphicStyle}>
         <div style={centerStyle}></div>
       </div>
