@@ -5,9 +5,9 @@ function App() {
     <div style={{ textAlign: "center", padding: "20px", fontFamily: "Segoe UI, Tahoma, sans-serif" }}>
       <h1>הגינה שלי</h1>
       
-      <Flower name="ורד" />
-      <Flower name="כלנית" />
-      <Flower name="שושנה" />
+      <Flower name="ורד" petalsColor="#FFC1E3" centerLeafColor="#f358c9"/>
+      <Flower name="כלנית" petalsColor="#C5CAE9" centerLeafColor="#3F51B5"/>
+      <Flower name="שושנה" petalsColor="#C8E6C9" centerLeafColor="#388E3C"/>
     </div>
   );
 }

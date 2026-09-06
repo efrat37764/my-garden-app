@@ -1,10 +1,8 @@
 function Flower(props) {
-  const petalsColor = "#FFC1E3";     
-  const centerLeafColor = "#f358c9"; 
-
+  
   const cardStyle = {
-    backgroundColor: petalsColor,
-    color: centerLeafColor,
+    backgroundColor: props.petalsColor,
+    color: props.centerLeafColor,
     padding: "30px",
     borderRadius: "20px",
     textAlign: "center",
@@ -18,7 +16,7 @@ function Flower(props) {
   const flowerGraphicStyle = {
     width: "70px",
     height: "70px",
-    backgroundColor: "#ef94d5", 
+    backgroundColor: props.petalsColor, 
     borderRadius: "50%",
     margin: "20px auto 0 auto",
     position: "relative",
@@ -31,7 +29,7 @@ function Flower(props) {
   const centerStyle = {
     width: "30px",
     height: "30px",
-    backgroundColor: centerLeafColor,
+    backgroundColor: props.centerLeafColor,
     borderRadius: "50%",
     boxShadow: "0 2px 5px rgba(0,0,0,0.2)"
   };
